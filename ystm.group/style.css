@@ -1,0 +1,69 @@
+/* Во Имя Отца и Сына и Святаго Духа. Аминь. */
+:root {
+
+	/* Website Color Scheme */
+	--main-color: #542A00;
+	--knv-color: #E34234;
+	--blue-color: #00BCFF;
+	--violet-color: #CD3DE0;
+	--yellow-color: #FFCF00;
+	--green-color: #4AB349;
+
+}
+
+
+body {
+	background-color: #F4FFEB;
+	background-image: linear-gradient(to top, #ffffda, #fff7e3, #fff6f5, #fff8fe, #fafafa);
+	;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+
+
+.red {
+	color: var(--knv-color);
+}
+
+h1 {
+	color: rgb(95, 90, 165);
+
+}
+
+.title {
+	font-size: 2em;
+}
+
+.desc {
+	font-size: 1.5em;
+}
+
+#flag {
+	opacity: .22;
+	/* border-top-left-radius: 44%; */
+	border-radius: 44%;
+	float: right;
+	position: relative;
+	animation-name: flag;
+	animation-duration: 1s;
+}
+
+@keyframes flag {
+
+	0% {
+		float: right;
+		opacity: 1;
+		top: 100vh;
+	}
+
+	/* 50% {
+		opacity: 1;
+		top: 50px;
+	} */
+
+	100% {
+		top: 0px;
+	}
+
+}

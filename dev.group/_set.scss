@@ -1,0 +1,18 @@
+$tst-red: #ff9c9c;
+$tst-blue: #9cbbff;
+
+main {
+	border: 3px dashed $tst-blue;
+}
+
+header,
+section,
+footer {
+	border: 1px dashed $tst-red;
+}
+
+footer,
+header {
+	background-color: lightgray;
+	color: brown;
+}

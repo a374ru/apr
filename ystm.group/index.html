@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+  {mltva}
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="{stylesheet='ystm/style'}" />
+    <title>{site_name}</title>
+  </head>
+  <body>
+    <div>{if logged_in }{flag}{/if}</div>
+
+    <section>
+      {logged_in_username} {exp:channel:entries channel="ystm"}
+      <p class="title">{title}</p>
+      <p class="desc">{desc}</p>
+      {author} {/exp:channel:entries}
+    </section>
+    <p>Глобальная переменная - {ystm} - видна вне системных блоков.</p>
+  </body>
+</html>

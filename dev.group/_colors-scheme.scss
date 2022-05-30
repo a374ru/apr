@@ -1,0 +1,72 @@
+/** 
+________________________________
+Стили шаблона aprakos.online для EE
+============================
+============================
+
+*/
+
+// Переменные разделены цветами. Краски составляют цветовую схему сайта.
+
+// Стартовые, основные значения с префиксом `main-xxxxx`.
+$body-color: #fffdff;
+$main-color: #542a00;
+$main-font-size: 17px;
+$main-padding: 7px;
+// Переменная - массштабирует текста в зависимости от размера окна. Применятся в раздельных блоках flex и gred.
+$font-resize: clamp(1em, 2vw, 2em);
+
+// -=-=-=-=-end=-=-=-=-
+
+// -=-=-=-=-=-=-=-=-
+$red-color: #e34234;
+// -=-=-=-=-end=-=-=-=-
+
+// -=-=-=-=-=-=-=-=-
+$blue-color: #00bcff;
+// -=-=-=-=-end=-=-=-=-
+
+// -=-=-=-=-=-=-=-=-
+$violet-color: #cd3de0;
+// -=-=-=-=-end=-=-=-=-
+
+// -=-=-=-=-=-=-=-=-
+$yellow-color: #ffc800;
+//  -=-=-=-=-end=-=-=-=-
+
+// -=-=-=-=-=-=-=-=-
+$green-color: #4ab349;
+// -=-=-=-=-end=-=-=-=-
+
+// Тестовый класс
+//===============
+.tst {
+	color: $main-color;
+}
+
+//===============
+
+
+/** 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Шрифты и классы шаблона aprakos.online для EE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+*/
+@font-face {
+	font-family: 'Irmologion';
+	font-display: auto;
+	src: local('Clunya-IrmIEUcs'), url('https://a374ru.github.io/aprakos.ru/font/Clunya-IrmIEUcs.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+// .csl {
+// 	font-family: Irmologion;
+// }
+
+#csl-zach,
+.csl-snoska {
+	font-family: Irmologion;
+	font-size: 1.1em;
+}

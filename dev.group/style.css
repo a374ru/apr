@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/* line 4, _set.scss */
+main { border: 3px dashed #9cbbff; }
+
+/* line 8, _set.scss */
+header, section, footer { border: 1px dashed #ff9c9c; }
+
+/* line 14, _set.scss */
+footer, header { background-color: lightgray; color: brown; }
+
+/** 
+________________________________
+Стили шаблона aprakos.online для EE
+============================
+============================
+
+*/
+/* line 43, _colors-scheme.scss */
+.tst { color: #542a00; }
+
+/** 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Шрифты и классы шаблона aprakos.online для EE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+*/
+@font-face { font-family: 'Irmologion'; font-display: auto; src: local("Clunya-IrmIEUcs"), url("https://a374ru.github.io/aprakos.ru/font/Clunya-IrmIEUcs.otf"); font-weight: normal; font-style: normal; }
+/* line 68, _colors-scheme.scss */
+#csl-zach, .csl-snoska { font-family: Irmologion; font-size: 1.1em; }
+
+/* line 1, _accordion.scss */
+.panel__switch { display: none; }
+
+/* line 5, _accordion.scss */
+.panel__title { display: block; margin: 0 0 1px; padding: 10px 15px; color: #999999; background: #e6e6e6; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: pointer; }
+/* line 16, _accordion.scss */
+.panel__switch:checked + .panel__title { color: #666666; background: #ffebeb; }
+
+/* line 22, _accordion.scss */
+.panel__body { display: none; padding: 0 15px; }
+/* line 26, _accordion.scss */
+.panel__switch:checked ~ .panel__body { display: block; }
+
+@media screen and (min-width: 768px) { /* line 34, _accordion.scss */
+  .panel-group-of-2 .panel__title { width: 50%; }
+  /* line 39, _accordion.scss */
+  .panel-group-of-2 .panel:nth-child(1) .panel__title { left: 0%; }
+  /* line 39, _accordion.scss */
+  .panel-group-of-2 .panel:nth-child(2) .panel__title { left: 50%; }
+  /* line 34, _accordion.scss */
+  .panel-group-of-3 .panel__title { width: 33.3333333333%; }
+  /* line 39, _accordion.scss */
+  .panel-group-of-3 .panel:nth-child(1) .panel__title { left: 0%; }
+  /* line 39, _accordion.scss */
+  .panel-group-of-3 .panel:nth-child(2) .panel__title { left: 33.3333333333%; }
+  /* line 39, _accordion.scss */
+  .panel-group-of-3 .panel:nth-child(3) .panel__title { left: 66.6666666667%; }
+  /* line 34, _accordion.scss */
+  .panel-group-of-4 .panel__title { width: 25%; }
+  /* line 39, _accordion.scss */
+  .panel-group-of-4 .panel:nth-child(1) .panel__title { left: 0%; }
+  /* line 39, _accordion.scss */
+  .panel-group-of-4 .panel:nth-child(2) .panel__title { left: 25%; }
+  /* line 39, _accordion.scss */
+  .panel-group-of-4 .panel:nth-child(3) .panel__title { left: 50%; }
+  /* line 39, _accordion.scss */
+  .panel-group-of-4 .panel:nth-child(4) .panel__title { left: 75%; }
+  /* line 34, _accordion.scss */
+  .panel-group-of-5 .panel__title { width: 20%; }
+  /* line 39, _accordion.scss */
+  .panel-group-of-5 .panel:nth-child(1) .panel__title { left: 0%; }
+  /* line 39, _accordion.scss */
+  .panel-group-of-5 .panel:nth-child(2) .panel__title { left: 20%; }
+  /* line 39, _accordion.scss */
+  .panel-group-of-5 .panel:nth-child(3) .panel__title { left: 40%; }
+  /* line 39, _accordion.scss */
+  .panel-group-of-5 .panel:nth-child(4) .panel__title { left: 60%; }
+  /* line 39, _accordion.scss */
+  .panel-group-of-5 .panel:nth-child(5) .panel__title { left: 80%; }
+  /* line 58, _accordion.scss */
+  .panel-group { position: relative; }
+  /* line 62, _accordion.scss */
+  .panel__title { position: absolute; top: 0; border-left: 1px solid #fff; }
+  /* line 67, _accordion.scss */
+  .panel:first-child .panel__title { border-left: none; }
+  /* line 72, _accordion.scss */
+  .panel__body { padding-top: 38px; } }
+/* line 77, _accordion.scss */
+.widget { margin: 0 15px; padding: 15px 0; border-bottom: 1px solid #e6e6e6; }
+
+/* line 83, _accordion.scss */
+* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+@-webkit-keyframes bugfix { from { padding: 0; }
+  to { padding: 0; } }
+/* line 102, _accordion.scss */
+body { -webkit-animation: bugfix infinite 2s; }
+
+/* line 6, style.scss */
+body { margin: 0; font-size: 17px; background-color: #fffdff; height: 100%; color: #542a00; }
+
+/* line 15, style.scss */
+.red, .knv { color: #e34234; }
+
+/* line 21, style.scss */
+HEADER { font-size: clamp(1em, 2vw, 2em); }
+
+/* line 25, style.scss */
+MAIN { display: grid; height: 100%; font-size: clamp(1em, 2vw, 2em); }
+
+/* line 32, style.scss */
+SECTION { padding: 1em; }
+
+/* line 37, style.scss */
+footer { grid-area: F; }
+
+/* line 42, style.scss */
+#date { font-size: 25.5px; }
+
+/**
+Таблица значений календаря
+*/
+/* line 49, style.scss */
+.time-board { display: flex; grid-template: auto/ auto auto auto auto auto; justify-content: space-evenly; justify-items: stretch; align-items: center; background-color: #faebeb; border-top: 1px solid #e2e2e2; border-bottom: 4px solid #f1e1e2; }
+
+/* line 61, style.scss */
+rt { font-size: clamp(11px, 2vw, 22px); color: #94444b; }
+
+/* line 66, style.scss */
+.old-new { font-size: clamp(22px, 2vw, 3em); padding: 1.2em 0em .7em 0em; }
+
+/**end*/
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  {mltva}
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicons/aprakos.ico" type="image/x-icon" />
+
+    <!-- <link
+      rel="stylesheet"
+      type="text/css"
+      href="{stylesheet='aprakos/style'}"
+    /> -->
+
+    <link rel="stylesheet" type="text/css" href="{site_url}css/aprakos/style" />
+    <title>Aprakos</title>
+  </head>
+  2
+  <body>
+    <p>User - {logged_in_username}</p>
+    {exp:channel:entries channel="aprakos" limit="12"}
+    <div class="title-zach">
+      <h1 id="title-zach">{ title }</h1>
+    </div>
+    <p class="numb-zach">
+      <span id="autor-zach-id">{ author_zach },</span> зач. { numb_zach }
+    </p>
+    <section class="csl-zach">
+      <p id="csl-zach-id">{ csl_zach }</p>
+    </section>
+    <section class="rus-zach">{ rus_zach }</section>
+    {if glg_zach != ""}
+    <section class="glg-zach">{ glg_zach }</section>
+    {/if} {/exp:channel:entries} {!--
+    <div class="flag" id="flag">{if logged_in }{flag}{/if}</div>
+    --}
+  </body>
+</html>
