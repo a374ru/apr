@@ -1,12 +1,4 @@
 @charset "UTF-8";
-/* line 4, _set.scss */
-main { border: 3px dashed #9cbbff; }
-
-/* line 8, _set.scss */
-header, section, footer { border: 1px dashed #ff9c9c; }
-
-/* line 14, _set.scss */
-footer, header { background-color: lightgray; color: brown; }
 
 /** 
 ________________________________
@@ -16,7 +8,9 @@ ________________________________
 
 */
 /* line 43, _colors-scheme.scss */
-.tst { color: #542a00; }
+.tst {
+  color: #542a00;
+}
 
 /** 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -24,110 +18,480 @@ ________________________________
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 */
-@font-face { font-family: 'Irmologion'; font-display: auto; src: local("Clunya-IrmIEUcs"), url("https://a374ru.github.io/aprakos.ru/font/Clunya-IrmIEUcs.otf"); font-weight: normal; font-style: normal; }
+@font-face {
+  font-family: 'Irmologion';
+  font-display: auto;
+  src: local("Clunya-IrmIEUcs"), url("https://a374ru.github.io/aprakos.ru/font/Clunya-IrmIEUcs.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* line 68, _colors-scheme.scss */
-#csl-zach, .csl-snoska { font-family: Irmologion; font-size: 1.1em; }
+#csl-zach,
+.csl-snoska {
+  font-family: Irmologion;
+  font-size: 1.1em;
+}
 
 /* line 1, _accordion.scss */
-.panel__switch { display: none; }
+.panel__switch {
+  display: none;
+}
 
 /* line 5, _accordion.scss */
-.panel__title { display: block; margin: 0 0 1px; padding: 10px 15px; color: #999999; background: #e6e6e6; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: pointer; }
+.panel__title {
+  display: block;
+  margin: 0 0 1px;
+  padding: 10px 15px;
+  color: #999999;
+  background: #e6e6e6;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
 /* line 16, _accordion.scss */
-.panel__switch:checked + .panel__title { color: #666666; background: #ffebeb; }
+.panel__switch:checked+.panel__title {
+  color: #666666;
+  background: #ffebeb;
+}
 
 /* line 22, _accordion.scss */
-.panel__body { display: none; padding: 0 15px; }
-/* line 26, _accordion.scss */
-.panel__switch:checked ~ .panel__body { display: block; }
+.panel__body {
+  display: none;
+  padding: 0 15px;
+}
 
-@media screen and (min-width: 768px) { /* line 34, _accordion.scss */
-  .panel-group-of-2 .panel__title { width: 50%; }
-  /* line 39, _accordion.scss */
-  .panel-group-of-2 .panel:nth-child(1) .panel__title { left: 0%; }
-  /* line 39, _accordion.scss */
-  .panel-group-of-2 .panel:nth-child(2) .panel__title { left: 50%; }
+/* line 26, _accordion.scss */
+.panel__switch:checked~.panel__body {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+
   /* line 34, _accordion.scss */
-  .panel-group-of-3 .panel__title { width: 33.3333333333%; }
+  .panel-group-of-2 .panel__title {
+    width: 50%;
+  }
+
   /* line 39, _accordion.scss */
-  .panel-group-of-3 .panel:nth-child(1) .panel__title { left: 0%; }
+  .panel-group-of-2 .panel:nth-child(1) .panel__title {
+    left: 0%;
+  }
+
   /* line 39, _accordion.scss */
-  .panel-group-of-3 .panel:nth-child(2) .panel__title { left: 33.3333333333%; }
-  /* line 39, _accordion.scss */
-  .panel-group-of-3 .panel:nth-child(3) .panel__title { left: 66.6666666667%; }
+  .panel-group-of-2 .panel:nth-child(2) .panel__title {
+    left: 50%;
+  }
+
   /* line 34, _accordion.scss */
-  .panel-group-of-4 .panel__title { width: 25%; }
+  .panel-group-of-3 .panel__title {
+    width: 33.3333333333%;
+  }
+
   /* line 39, _accordion.scss */
-  .panel-group-of-4 .panel:nth-child(1) .panel__title { left: 0%; }
+  .panel-group-of-3 .panel:nth-child(1) .panel__title {
+    left: 0%;
+  }
+
   /* line 39, _accordion.scss */
-  .panel-group-of-4 .panel:nth-child(2) .panel__title { left: 25%; }
+  .panel-group-of-3 .panel:nth-child(2) .panel__title {
+    left: 33.3333333333%;
+  }
+
   /* line 39, _accordion.scss */
-  .panel-group-of-4 .panel:nth-child(3) .panel__title { left: 50%; }
-  /* line 39, _accordion.scss */
-  .panel-group-of-4 .panel:nth-child(4) .panel__title { left: 75%; }
+  .panel-group-of-3 .panel:nth-child(3) .panel__title {
+    left: 66.6666666667%;
+  }
+
   /* line 34, _accordion.scss */
-  .panel-group-of-5 .panel__title { width: 20%; }
+  .panel-group-of-4 .panel__title {
+    width: 25%;
+  }
+
   /* line 39, _accordion.scss */
-  .panel-group-of-5 .panel:nth-child(1) .panel__title { left: 0%; }
+  .panel-group-of-4 .panel:nth-child(1) .panel__title {
+    left: 0%;
+  }
+
   /* line 39, _accordion.scss */
-  .panel-group-of-5 .panel:nth-child(2) .panel__title { left: 20%; }
+  .panel-group-of-4 .panel:nth-child(2) .panel__title {
+    left: 25%;
+  }
+
   /* line 39, _accordion.scss */
-  .panel-group-of-5 .panel:nth-child(3) .panel__title { left: 40%; }
+  .panel-group-of-4 .panel:nth-child(3) .panel__title {
+    left: 50%;
+  }
+
   /* line 39, _accordion.scss */
-  .panel-group-of-5 .panel:nth-child(4) .panel__title { left: 60%; }
+  .panel-group-of-4 .panel:nth-child(4) .panel__title {
+    left: 75%;
+  }
+
+  /* line 34, _accordion.scss */
+  .panel-group-of-5 .panel__title {
+    width: 20%;
+  }
+
   /* line 39, _accordion.scss */
-  .panel-group-of-5 .panel:nth-child(5) .panel__title { left: 80%; }
+  .panel-group-of-5 .panel:nth-child(1) .panel__title {
+    left: 0%;
+  }
+
+  /* line 39, _accordion.scss */
+  .panel-group-of-5 .panel:nth-child(2) .panel__title {
+    left: 20%;
+  }
+
+  /* line 39, _accordion.scss */
+  .panel-group-of-5 .panel:nth-child(3) .panel__title {
+    left: 40%;
+  }
+
+  /* line 39, _accordion.scss */
+  .panel-group-of-5 .panel:nth-child(4) .panel__title {
+    left: 60%;
+  }
+
+  /* line 39, _accordion.scss */
+  .panel-group-of-5 .panel:nth-child(5) .panel__title {
+    left: 80%;
+  }
+
   /* line 58, _accordion.scss */
-  .panel-group { position: relative; }
+  .panel-group {
+    position: relative;
+  }
+
   /* line 62, _accordion.scss */
-  .panel__title { position: absolute; top: 0; border-left: 1px solid #fff; }
+  .panel__title {
+    position: absolute;
+    top: 0;
+    border-left: 1px solid #fff;
+  }
+
   /* line 67, _accordion.scss */
-  .panel:first-child .panel__title { border-left: none; }
+  .panel:first-child .panel__title {
+    border-left: none;
+  }
+
   /* line 72, _accordion.scss */
-  .panel__body { padding-top: 38px; } }
+  .panel__body {
+    padding-top: 38px;
+  }
+}
+
 /* line 77, _accordion.scss */
-.widget { margin: 0 15px; padding: 15px 0; border-bottom: 1px solid #e6e6e6; }
+.widget {
+  margin: 0 15px;
+  padding: 15px 0;
+  border-bottom: 1px solid #e6e6e6;
+}
 
 /* line 83, _accordion.scss */
-* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
-@-webkit-keyframes bugfix { from { padding: 0; }
-  to { padding: 0; } }
+/* @-webkit-keyframes bugfix {
+  from {
+    padding: 0;
+  }
+
+  to {
+    padding: 0;
+  }
+} */
+
 /* line 102, _accordion.scss */
-body { -webkit-animation: bugfix infinite 2s; }
+/* body { -webkit-animation: bugfix infinite 2s; } */
 
+/* line 10, _menu.scss */
+.navigation__checkbox {
+  display: none;
+}
+
+/* line 14, _menu.scss */
+.navigation__button {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  height: 2rem;
+  width: 2rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  z-index: 300;
+  transition: all 800ms cubic-bezier(0.86, 0, 0.07, 1);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+
+  /* line 30, _menu.scss */
+  .navigation__button {
+    top: 1.5rem;
+    right: 1.5rem;
+    height: 3rem;
+    width: 3rem;
+  }
+}
+
+/* line 38, _menu.scss */
+.navigation__background {
+  position: fixed;
+  top: -1rem;
+  right: -1rem;
+  height: .5rem;
+  width: .5rem;
+  border-radius: 50%;
+  background: #ffffff82;
+  backdrop-filter: blur(0.05px);
+  background-size: cover;
+  background-position: center;
+  z-index: 100;
+  transition: all 800ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+@media screen and (min-width: 768px) {
+
+  /* line 57, _menu.scss */
+  .navigation__background {
+    top: 2rem;
+    right: 2rem;
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+/* line 65, _menu.scss */
+.navigation__nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  opacity: 0;
+  width: 0;
+  visibility: hidden;
+  z-index: 200;
+  transition: all 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* line 77, _menu.scss */
+.navigation__list {
+  /*@include center;*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  list-style: none;
+}
+
+/* line 88, _menu.scss */
+.navigation__item {
+  margin: 1rem;
+}
+
+/* line 92, _menu.scss */
+.navigation__link:link,
+.navigation__link:visited {
+  display: inline-block;
+  padding: 1rem 1rem;
+  text-transform: uppercase;
+  color: #542a00;
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: all .2s;
+}
+
+@media (min-width: 768px) {
+
+  /* line 105, _menu.scss */
+  .navigation__link:link,
+  .navigation__link:visited {
+    font-size: 2.8rem;
+  }
+}
+
+/* line 111, _menu.scss */
+.navigation__link span {
+  margin-right: 1.5rem;
+  display: inline-block;
+}
+
+/* line 116, _menu.scss */
+.navigation__link:hover {
+  color: #357a7a;
+  transform: scale(1.1);
+}
+
+/* line 121, _menu.scss */
+.navigation__checkbox:checked~.navigation__background {
+  transform: scale(220);
+}
+
+/* line 125, _menu.scss */
+.navigation__checkbox:checked~.navigation__nav {
+  width: 100%;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 131, _menu.scss */
+.navigation__icon {
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+
+  /* line 138, _menu.scss */
+  .navigation__icon {
+    margin-top: 1.5rem;
+  }
+}
+
+/* line 143, _menu.scss */
+.navigation__icon,
+.navigation__icon::before,
+.navigation__icon::after {
+  display: inline-block;
+  width: 1rem;
+  height: 1px;
+  background-color: #000000;
+}
+
+@media (min-width: 768px) {
+
+  /* line 155, _menu.scss */
+  .navigation__icon,
+  .navigation__icon::before,
+  .navigation__icon::after {
+    width: 1.2rem;
+  }
+}
+
+/* line 163, _menu.scss */
+.navigation__icon::before,
+.navigation__icon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  transition: all 200ms;
+}
+
+/* line 171, _menu.scss */
+.navigation__icon::before {
+  top: -.2rem;
+}
+
+/* line 175, _menu.scss */
+.navigation__icon::after {
+  top: .2rem;
+}
+
+/* line 179, _menu.scss */
+.navigation__button:hover .navigation__icon::before {
+  top: -.3rem;
+}
+
+/* line 183, _menu.scss */
+.navigation__button:hover .navigation__icon::after {
+  top: .3rem;
+}
+
+/* line 187, _menu.scss */
+.navigation__checkbox:checked+.navigation__button .navigation__icon {
+  background-color: transparent;
+}
+
+/* line 191, _menu.scss */
+.navigation__checkbox:checked+.navigation__button .navigation__icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+/* line 196, _menu.scss */
+.navigation__checkbox:checked+.navigation__button .navigation__icon::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+
+/*-----------------------*/
+/* light-blue: #C1D0D0; dark-blue: #4A676A; cream: #FFEAA5; yellow: #FFB037; */
 /* line 6, style.scss */
-body { margin: 0; font-size: 17px; background-color: #fffdff; height: 100%; color: #542a00; }
+body {
+  margin: 0;
+  font-size: 17px;
+  background-color: #fffdff;
+  height: 100%;
+  color: #542a00;
+}
 
 /* line 15, style.scss */
-.red, .knv { color: #e34234; }
+.red,
+.knv {
+  color: #e34234;
+}
 
 /* line 21, style.scss */
-HEADER { font-size: clamp(1em, 2vw, 2em); }
+HEADER {
+  font-size: clamp(1em, 2vw, 2em);
+}
 
 /* line 25, style.scss */
-MAIN { display: grid; height: 100%; font-size: clamp(1em, 2vw, 2em); }
+MAIN {
+  display: grid;
+  height: 100%;
+  font-size: clamp(1em, 2vw, 2em);
+}
 
 /* line 32, style.scss */
-SECTION { padding: 1em; }
+SECTION {
+  padding: 1em;
+}
 
 /* line 37, style.scss */
-footer { grid-area: F; }
+footer {
+  grid-area: F;
+}
 
 /* line 42, style.scss */
-#date { font-size: 25.5px; }
+#date {
+  font-size: 25.5px;
+}
 
 /**
 Таблица значений календаря
 */
 /* line 49, style.scss */
-.time-board { display: flex; grid-template: auto/ auto auto auto auto auto; justify-content: space-evenly; justify-items: stretch; align-items: center; background-color: #faebeb; border-top: 1px solid #e2e2e2; border-bottom: 4px solid #f1e1e2; }
+.time-board {
+  display: flex;
+  grid-template: auto/ auto auto auto auto auto;
+  justify-content: space-evenly;
+  justify-items: stretch;
+  align-items: center;
+  background-color: #faebeb;
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 4px solid #f1e1e2;
+}
 
 /* line 61, style.scss */
-rt { font-size: clamp(11px, 2vw, 22px); color: #94444b; }
+rt {
+  font-size: clamp(11px, 2vw, 22px);
+  color: #94444b;
+}
 
 /* line 66, style.scss */
-.old-new { font-size: clamp(22px, 2vw, 3em); padding: 1.2em 0em .7em 0em; }
+.old-new {
+  font-size: clamp(22px, 2vw, 3em);
+  padding: 1.2em 0em .7em 0em;
+}
 
 /**end*/
 
