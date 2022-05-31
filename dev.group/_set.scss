@@ -8,7 +8,12 @@ main {
 header,
 section,
 footer {
-	border: 2px dashed $tst-red;
+	border: 2px solid $tst-red;
+}
+
+article{
+
+	border: 3px solid #90ee9077;
 }
 
 footer,

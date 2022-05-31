@@ -1,9 +1,14 @@
 // S:S Настроить `TOPBAR` и `GRID-ARE` 
-@import '_set';
+
+// Не забудь отключить `_set`
+// @import '_set';
 @import '_colors-scheme';
 @import '_accordion';
 @import '_menu';
 
+.image-logo{
+	box-shadow: 0px 3px 7px #00000077;
+}
 
 * {
 	box-sizing: border-box;
@@ -32,6 +37,7 @@ h2 {
 
 
 HEADER {
+	// position: fixed; 
 	font-size: $font-resize;
 }
 
@@ -41,6 +47,9 @@ MAIN {
 	font-size: $font-resize;
 }
 
+article{
+
+}
 
 SECTION {
 	padding: 1em;
