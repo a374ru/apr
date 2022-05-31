@@ -1,5 +1,5 @@
-$tst-red: #ff9c9c;
-$tst-blue: #9cbbff;
+$tst-red: #fd0101;
+$tst-blue: #2f59b3;
 
 main {
 	border: 3px dashed $tst-blue;
@@ -8,7 +8,7 @@ main {
 header,
 section,
 footer {
-	border: 1px dashed $tst-red;
+	border: 2px dashed $tst-red;
 }
 
 footer,

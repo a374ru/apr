@@ -1,7 +1,15 @@
-// @import '_set';
+// S:S Настроить `TOPBAR` и `GRID-ARE` 
+@import '_set';
 @import '_colors-scheme';
 @import '_accordion';
 @import '_menu';
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
 
 body {
 	margin: 0;
@@ -10,6 +18,11 @@ body {
 	height: 100%;
 	color: $main-color;
 
+}
+
+h2 {
+	padding-top: 2em;
+	padding-bottom: 1.5em;
 }
 
 .red,
