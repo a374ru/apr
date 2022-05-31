@@ -1,0 +1,426 @@
+@charset "UTF-8";
+/** 
+________________________________
+Стили шаблона aprakos.online для EE
+============================
+============================
+
+*/
+.tst {
+  color: #542a00;
+}
+
+/** 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Шрифты и классы шаблона aprakos.online для EE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+*/
+@font-face {
+  font-family: 'Irmologion';
+  font-display: auto;
+  src: local("Clunya-IrmIEUcs"), url("https://a374ru.github.io/aprakos.ru/font/Clunya-IrmIEUcs.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#csl-zach,
+.csl-snoska {
+  font-family: Irmologion;
+  font-size: 1.1em;
+}
+
+.panel__switch {
+  display: none;
+}
+
+.panel__title {
+  display: block;
+  margin: 0 0 1px;
+  padding: 10px 15px;
+  color: #999999;
+  background: #e6e6e6;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+.panel__switch:checked + .panel__title {
+  color: #666666;
+  background: #ffebeb;
+}
+
+.panel__body {
+  display: none;
+  padding: 0 15px;
+}
+
+.panel__switch:checked ~ .panel__body {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .panel-group-of-2 .panel__title {
+    width: 50%;
+  }
+  .panel-group-of-2 .panel:nth-child(1) .panel__title {
+    left: 0%;
+  }
+  .panel-group-of-2 .panel:nth-child(2) .panel__title {
+    left: 50%;
+  }
+  .panel-group-of-3 .panel__title {
+    width: 33.33333%;
+  }
+  .panel-group-of-3 .panel:nth-child(1) .panel__title {
+    left: 0%;
+  }
+  .panel-group-of-3 .panel:nth-child(2) .panel__title {
+    left: 33.33333%;
+  }
+  .panel-group-of-3 .panel:nth-child(3) .panel__title {
+    left: 66.66667%;
+  }
+  .panel-group-of-4 .panel__title {
+    width: 25%;
+  }
+  .panel-group-of-4 .panel:nth-child(1) .panel__title {
+    left: 0%;
+  }
+  .panel-group-of-4 .panel:nth-child(2) .panel__title {
+    left: 25%;
+  }
+  .panel-group-of-4 .panel:nth-child(3) .panel__title {
+    left: 50%;
+  }
+  .panel-group-of-4 .panel:nth-child(4) .panel__title {
+    left: 75%;
+  }
+  .panel-group-of-5 .panel__title {
+    width: 20%;
+  }
+  .panel-group-of-5 .panel:nth-child(1) .panel__title {
+    left: 0%;
+  }
+  .panel-group-of-5 .panel:nth-child(2) .panel__title {
+    left: 20%;
+  }
+  .panel-group-of-5 .panel:nth-child(3) .panel__title {
+    left: 40%;
+  }
+  .panel-group-of-5 .panel:nth-child(4) .panel__title {
+    left: 60%;
+  }
+  .panel-group-of-5 .panel:nth-child(5) .panel__title {
+    left: 80%;
+  }
+  .panel-group {
+    position: relative;
+  }
+  .panel__title {
+    position: absolute;
+    top: 0;
+    border-left: 1px solid #fff;
+  }
+  .panel:first-child .panel__title {
+    border-left: none;
+  }
+  .panel__body {
+    padding-top: 38px;
+  }
+}
+
+.widget {
+  margin: 0 15px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes bugfix {
+  from {
+    padding: 0;
+  }
+  to {
+    padding: 0;
+  }
+}
+
+body {
+  -webkit-animation: bugfix infinite 2s;
+}
+
+.navigation__button {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  height: 2rem;
+  width: 2rem;
+  text-align: center;
+  background-color: #eaeaea;
+  border-radius: 10%;
+  z-index: 300;
+  -webkit-box-shadow: 0rem 0rem 23px #d1d1d1;
+          box-shadow: 0rem 0rem 23px #d1d1d1;
+  -webkit-transition: all 800ms cubic-bezier(0.86, 0, 0.07, 1);
+  transition: all 800ms cubic-bezier(0.86, 0, 0.07, 1);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation__button {
+    height: 3rem;
+    width: 3rem;
+  }
+}
+
+.navigation__background {
+  position: fixed;
+  top: 1.7rem;
+  right: 1.7rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 12%;
+  background: #e3e3e3;
+  background-size: cover;
+  background-position: center;
+  z-index: 100;
+  -webkit-transition: all 800ms cubic-bezier(0.86, 0, 0.07, 1);
+  transition: all 800ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .navigation__background {
+    top: 2rem;
+    right: 2rem;
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+.navigation__nav {
+  position: fixed;
+  top: 0;
+  left: -.4em;
+  height: 100vh;
+  opacity: 0;
+  width: 0;
+  visibility: hidden;
+  z-index: 200;
+  -webkit-transition: all 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.navigation__list {
+  /*@include center;*/
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  list-style: none;
+}
+
+.navigation__item {
+  margin: 1rem;
+}
+
+#nav-toggle {
+  display: none;
+}
+
+.navigation__link:link,
+.navigation__link:visited {
+  display: inline-block;
+  padding: 1rem 1rem;
+  text-transform: uppercase;
+  color: #542a00;
+  font-size: 1.7em;
+  text-decoration: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+@media (min-width: 768px) {
+  .navigation__link:link,
+  .navigation__link:visited {
+    font-size: 2.5vw;
+  }
+}
+
+.navigation__link span {
+  margin-right: 1.5rem;
+  display: inline-block;
+}
+
+.navigation__link:hover {
+  color: #357a7a;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.navigation__checkbox:checked ~ .navigation__background {
+  -webkit-transform: scale(250);
+          transform: scale(250);
+}
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  width: 100%;
+  visibility: visible;
+  opacity: 1;
+}
+
+.navigation__icon {
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation__icon {
+    margin-top: 44%;
+  }
+}
+
+.navigation__icon,
+.navigation__icon::before,
+.navigation__icon::after {
+  display: inline-block;
+  top: .1rem;
+  width: 1rem;
+  height: 3px;
+  background-color: #cbcbcb;
+}
+
+@media (min-width: 768px) {
+  .navigation__icon,
+  .navigation__icon::before,
+  .navigation__icon::after {
+    width: 2.2rem;
+  }
+}
+
+.navigation__icon::before,
+.navigation__icon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+
+.navigation__icon::before {
+  top: -.3rem;
+}
+
+.navigation__icon::after {
+  top: .3rem;
+}
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  background-color: transparent;
+}
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+  top: 0;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+  top: 0;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+.image-logo {
+  -webkit-box-shadow: 0px 3px 7px #00000077;
+          box-shadow: 0px 3px 7px #00000077;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-size: 17px;
+  background-color: #fffdff;
+  height: 100%;
+  color: #542a00;
+}
+
+h2 {
+  padding-top: 2em;
+  padding-bottom: 1.5em;
+}
+
+.red,
+.knv {
+  color: #e34234;
+}
+
+HEADER {
+  font-size: clamp(1em, 2vw, 2em);
+}
+
+MAIN {
+  display: -ms-grid;
+  display: grid;
+  height: 100%;
+  font-size: clamp(1em, 2vw, 2em);
+}
+
+SECTION {
+  padding: 1em;
+}
+
+footer {
+  grid-area: F;
+}
+
+#date {
+  font-size: 25.5px;
+}
+
+/**
+Таблица значений календаря
+*/
+.time-board {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-rows: auto;
+  -ms-grid-columns: auto auto auto auto auto;
+      grid-template: auto/ auto auto auto auto auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  justify-items: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #faebeb;
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 4px solid #f1e1e2;
+}
+
+rt {
+  font-size: clamp(11px, 2vw, 22px);
+  color: #94444b;
+}
+
+.old-new {
+  font-size: clamp(22px, 2vw, 3em);
+  padding: 1.2em 0em .7em 0em;
+}
+
+/**end*/
+/*# sourceMappingURL=style.css.map */

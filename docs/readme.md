@@ -1,3 +1,3 @@
 # Документация проекта Aprakos.online
 
-[тест здесь…](../dev.group/index.html)
+[тест здесь…](index.html)
