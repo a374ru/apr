@@ -340,6 +340,8 @@ body {
 .image-logo {
   -webkit-box-shadow: 0px 3px 7px #00000077;
           box-shadow: 0px 3px 7px #00000077;
+  z-index: -1;
+  background-color: #d96670;
 }
 
 * {
@@ -367,8 +369,32 @@ h2 {
   color: #e34234;
 }
 
+.site-name {
+  -webkit-padding-start: 3vw;
+          padding-inline-start: 3vw;
+}
+
 HEADER {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: clamp(1em, 2vw, 2em);
+  font-size: clamp(1em, 2vw, 2em);
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #faebeb;
+  background: #ff8f8f;
+  background: #8b3838;
+  background: -webkit-gradient(linear, left top, right top, from(#8b3838), to(#faebeb));
+  background: linear-gradient(90deg, #8b3838 0%, #faebeb 100%);
+}
+
+#online {
+  color: #d99494;
 }
 
 MAIN {
@@ -394,6 +420,7 @@ footer {
 Таблица значений календаря
 */
 .time-board {
+  z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -415,6 +442,11 @@ footer {
 rt {
   font-size: clamp(11px, 2vw, 22px);
   color: #94444b;
+}
+
+nav {
+  -webkit-padding-start: 5vw;
+          padding-inline-start: 5vw;
 }
 
 .old-new {
