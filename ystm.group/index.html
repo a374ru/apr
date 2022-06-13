@@ -7,16 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="{stylesheet='ystm/style'}" />
-    <title>{site_name}</title>
+    <title>{exp:channel:entries channel="ystm"}{title}{/exp:channel:entries} | {site_name}</title>
   </head>
   <body>
-    <div>{if logged_in }{flag}{/if}</div>
+    <div id="flag" class="flag">{if logged_in }{flag}{/if}</div>
 
     <section>
-      {logged_in_username} {exp:channel:entries channel="ystm"}
+      Пользователь: {logged_in_username} 
+      {exp:channel:entries channel="ystm"}
       <p class="title">{title}</p>
-      <p class="desc">{desc}</p>
-      {author} {/exp:channel:entries}
+      {exp:markdown}
+      {instr}
+      {/exp:markdown}
+      Автор: {author} 
+      {/exp:channel:entries}
     </section>
     <p>Глобальная переменная - {ystm} - видна вне системных блоков.</p>
   </body>
