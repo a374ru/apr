@@ -1,53 +1,48 @@
-<!DOCTYPE html>
-<html lang="ru-RU">
-{mltva}
+{layout="aprakos/_wrapper"}
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="favicons/aprakos.ico" type="image/x-icon" />
+<section>
+  <div class="entrance">
+    {exp:channel:entries channel="ystm" limit='1'}
+    <h1 id="entrance">
+      <a href="{site_url}aprakos/lenta">
+        <span style="color: #e34234 ;"></span>APRAKOS</span>
+      </a>
+      .
+      <a href="{url_title_path='aprakos/one/'}"><span style="color:black ;">ONLINE</span>
+      </a>
+    </h1>
+    {/exp:channel:entries}
+  </div>
+</section>
 
-  {!--
-  <link rel="stylesheet" type="text/css" href="{stylesheet='aprakos/style'}" />
-  --}
 
-  <link rel="stylesheet" type="text/css" href="{site_url}css/aprakos/style" />
-  <title>{page_title} | {site_name}</title>
-  </head>
-<body>
-  <p>User - {logged_in_username}</p>
-  {exp:channel:entries channel="aprakos" sort="desc" limit="12"}
-  <div class="title-zach">
-    <h1 id="title-zach"><a href="{url_title_path='aprakos/one'}">Седьмица { title }</h1></a></h1>
-    </div>
-    <p class="numb-zach">
-      <span id="autor-zach-id">{ author_zach },</span> зач. { numb_zach }
-    </p>
-    <section class="csl-zach">
-    {if csl_zach}
-    <p id="csl-zach-id">{ csl_zach }</p>
-    <p class="dalee">
-      <a href="{url_title_path='aprakos/one'}">дaлее</a>
-    </p>
-    
-    {if:else} {body:limit characters='77'}
-    {/if}
-    </section>
-    <section class="rus-zach">
-      {if rus_zach}
-      { rus_zach }
-      {/if}
-    </section>
-    
-    <section class="glg-zach">
-      {if glg_zach}
-      { glg_zach }
-      {/if}
-    </section>
-    {/exp:channel:entries} {!--
-    <div class="flag" id="flag">{if logged_in }{flag}{/if}</div>
-    --}
-  </body>
 
-</html>
+{!-- {exp:channel:entries channel="aprakos" sort="desc" limit="12"}
+<div class="title-zach">
+  <h1 id="title-zach"><a href="{url_title_path='aprakos/one'}">Седьмица { title }</h1></a></h1>
+</div>
+<p class="numb-zach">
+  <span id="autor-zach-id">{ author_zach },</span> зач. { numb_zach }
+</p>
+<section class="csl-zach">
+  {if csl_zach}
+  <p id="csl-zach-id">{ csl_zach }</p>
+  <p class="dalee">
+    <a href="{url_title_path='aprakos/one'}">дaлее</a>
+  </p>
+
+  {if:else} {body:limit characters='77'}
+  {/if}
+</section>
+<section class="rus-zach">
+  {if rus_zach}
+  { rus_zach }
+  {/if}
+</section>
+
+<section class="glg-zach">
+  {if glg_zach}
+  { glg_zach }
+  {/if}
+</section>
+{/exp:channel:entries} --}

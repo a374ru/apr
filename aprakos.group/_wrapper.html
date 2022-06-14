@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+{mltva}
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>{layout:title}</title>
+	<link rel="shortcut icon" href="favicons/aprakos.ico" type="image/x-icon" />
+
+	{!--
+	<link rel="stylesheet" type="text/css" href="{stylesheet='aprakos/style'}" />
+	--}
+
+	<link rel="stylesheet" type="text/css" href="{site_url}css/aprakos/style" />
+</head>
+
+<body>
+	<p>User - {logged_in_username}</p>
+
+	{layout:contents}
+
+</body>
+{!--
+<div class="flag" id="flag">{if logged_in }{flag}{/if}</div> --}
+
+</html>
