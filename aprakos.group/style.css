@@ -1,8 +1,11 @@
 /* Color Scheme */
 
 body {
-	background-color: #fefdfa;
+	/* background-color: #fefdfa; */
 	color: #542a00;
+	margin: 0;
+background-image:  linear-gradient(#ff4e4e 0.4px, transparent 0.4px), linear-gradient(to right, #ff4e4e 0.4px, #fffef0 0.4px);
+background-size: 8px 8px;
 }
 
 h1 {
@@ -80,8 +83,8 @@ a{
 	color: #e34234;
 }
 
-.entrance{
+/* .entrance{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
+} */

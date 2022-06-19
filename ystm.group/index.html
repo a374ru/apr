@@ -10,9 +10,12 @@
     <title>{exp:channel:entries channel="ystm"}{title}{/exp:channel:entries} | {site_name}</title>
   </head>
   <body>
+    <section>
+      <h3><a href="{site_url}">
+          ГЛВНАЯ СТРАНИЦА ПРОЕКТА
+        </a></h3>
     <div id="flag" class="flag">{if logged_in }{flag}{/if}</div>
 
-    <section>
       Пользователь: {logged_in_username} 
       {exp:channel:entries channel="ystm"}
       <p class="title">{title}</p>
@@ -21,7 +24,7 @@
       {/exp:markdown}
       Автор: {author} 
       {/exp:channel:entries}
+    <p class="ystm" id="ystm">{ystm}</p>
     </section>
-    <p>Глобальная переменная - {ystm} - видна вне системных блоков.</p>
   </body>
 </html>
