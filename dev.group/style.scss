@@ -5,6 +5,8 @@
 @import '_colors-scheme';
 @import '_accordion';
 @import '_menu';
+@import '_start';
+
 
 
 // .wrapper{
@@ -29,15 +31,6 @@ background-color: #d96670;
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-}
-
-body {
-	margin: 0;
-	font-size: $main-font-size;
-	background-color: $body-color;
-	height: 100%;
-	color: $main-color;
-
 }
 
 h2 {
@@ -71,9 +64,10 @@ background: linear-gradient(90deg, rgba(139,56,56,1) 0%, rgba(250,235,235,1) 100
 }
 MAIN {
 	display: grid;
-	height: 100%;
-	font-size: $font-resize;
+  font-size: clamp(1em, 6vw, 2em);
+  grid-template: auto / 1fr 6fr 1fr;
 }
+
 
 article{
 
@@ -85,7 +79,10 @@ SECTION {
 
 
 footer {
-	grid-area: F;
+	background-color: #d96670;
+	background: linear-gradient(0deg, rgba(139,56,56,1) 0%, rgba(250,235,235,1) 100%);
+	display: grid;
+	height: 100%;
 
 }
 
@@ -136,4 +133,10 @@ color: #d96670;
 	justify-content: center;
 	align-items: center;
 }
+
+.space-box{
+	// grid-area: s;
+
+}
+
 /**end*/

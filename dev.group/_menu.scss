@@ -121,6 +121,7 @@ $gamburger: #cbcbcb;
 }
 
 .navigation__checkbox:checked~.navigation__background {
+	z-index: 111;
 	transform: scale(250)
 }
 

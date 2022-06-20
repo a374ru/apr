@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
 {mltva}
-
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,18 +11,24 @@
 	<link rel="stylesheet" type="text/css" href="{stylesheet='aprakos/style'}" />
 	--}
 
-	<link rel="stylesheet" type="text/css" href="{site_url}css/aprakos/style" />
+	<link rel="stylesheet" type="text/css" href="{site_url}css/dev/style" />
 	<title>{page_title} | {site_name}</title>
 </head>
 
 <body>
-	<p>User - {logged_in_username}</p>
+	{!-- <p>User - {logged_in_username}</p> --}
 
 	{layout:contents}
 
 	{!--
 	<div class="flag" id="flag">{if logged_in }{flag}{/if}</div>
 	--}
+<footer>
+	<!-- =-=-=-=-=-=-=-=-=-========================= -->
+	<div class="tst-time">time</div>:<div id="date"></div>
+</footer>
+</div>
+<script src="{site_url}dev/js"></script>
 </body>
 
 </html>
