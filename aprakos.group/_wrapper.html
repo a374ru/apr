@@ -13,7 +13,8 @@
 	--}
 
 	<link rel="stylesheet" type="text/css" href="{site_url}css/aprakos/style" />
-	<title>{page_title} | {site_name}</title>
+	<title>{if layout:temp_title!= ''}{layout:temp_title}{/if}{if layout:entries!= ''}{layout:entries}{/if} |
+		{site_name}</title>
 </head>
 
 <body>

@@ -1,10 +1,13 @@
 {layout="aprakos/_wrapper"}
 
+{layout:set name='temp_title'}Зачала всего лета – {/layout:set}
+
 <a href="{site_url}">ссылка назад</a>
 
 
-
-{exp:channel:entries channel="aprakos" sort="asc" limit="3"}
+{exp:channel:entries channel="aprakos" sort="desc" limit="3"}
+{!-- Захват limit в переменную entries --}
+{layout:set name='entries'}{count}{/layout:set}
 <div class="title-zach">
 	<h1 id="title-zach"><a href="{url_title_path='aprakos/one'}">Седьмица { title }</h1></a></h1>
 </div>

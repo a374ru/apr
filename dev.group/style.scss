@@ -7,6 +7,22 @@
 @import '_menu';
 
 
+/** 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Шрифты и классы шаблона aprakos.online для EE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+*/
+
+@font-face {
+  font-family: 'Irmologion';
+  font-display: auto;
+  src: local("Clunya-IrmIEUcs"), url("https://a374ru.github.io/aprakos.ru/font/Clunya-IrmIEUcs.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 // .wrapper{
 // 	//  position: relative;
 //   padding-top: 56.25%; /* 16:9 Aspect Ratio */
