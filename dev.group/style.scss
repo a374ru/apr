@@ -5,7 +5,7 @@
 @import '_colors-scheme';
 @import '_accordion';
 @import '_menu';
-@import '_indx';
+// @import 'indx';
 
 
 
@@ -24,6 +24,8 @@
 body{
 	// ---------
 	height: 100vh;
+	display: grid;
+	grid-template: auto auto 1fr auto/ auto;
 }
 
 .image-logo{
@@ -40,7 +42,7 @@ background-color: #d96670;
 }
 
 h2 {
-	padding-top: 2em;
+	padding-top: 1em;
 	padding-bottom: 1.5em;
 }
 
@@ -69,14 +71,25 @@ background: linear-gradient(90deg, rgba(139,56,56,1) 0%, rgba(250,235,235,1) 100
 	color:#d99494;
 }
 MAIN {
+
 	display: grid;
-  font-size: clamp(1em, 6vw, 2em);
-  grid-template: auto / 1fr 6fr 1fr;
-  grid-template-areas:
-    ". section  ."
+	font-size: clamp(1em, 6vw, 2em);
+	grid-template: auto / 1fr 6fr 1fr;
+	grid-template-areas:
+    "l section  r"
 	"space space space"
+	
+
+
 }
 
+.left-col{
+grid-area: r;
+	
+}
+.right-col{
+grid-area: l;
+}
 
 article{
 
@@ -84,7 +97,7 @@ article{
 
 SECTION {
 	grid-area: section;
-	padding: 1em;
+
 }
 
 
@@ -145,6 +158,7 @@ color: #d96670;
 }
 
 .space-box{
+	height: 0;
 	grid-area: space;
 
 }
@@ -159,7 +173,8 @@ color: #d96670;
     display: none;
   }
    MAIN{
-    grid-template: auto/ auto;
+    //   grid-template: auto / auto auto auto;
+
   }
 }
 
