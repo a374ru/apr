@@ -5,7 +5,7 @@
 @import '_colors-scheme';
 @import '_accordion';
 @import '_menu';
-@import '_start';
+@import '_indx';
 
 
 
@@ -20,6 +20,12 @@
 //   width: 100%;
 //   height: auto;
 // }
+
+body{
+	// ---------
+	height: 100vh;
+}
+
 .image-logo{
 	// position: fixed;
 	box-shadow: 0px 3px 7px #00000077;
@@ -66,6 +72,9 @@ MAIN {
 	display: grid;
   font-size: clamp(1em, 6vw, 2em);
   grid-template: auto / 1fr 6fr 1fr;
+  grid-template-areas:
+    ". section  ."
+	"space space space"
 }
 
 
@@ -74,15 +83,16 @@ article{
 }
 
 SECTION {
+	grid-area: section;
 	padding: 1em;
 }
 
 
 footer {
-	background-color: #d96670;
+	// background-color: #d96670;
 	background: linear-gradient(0deg, rgba(139,56,56,1) 0%, rgba(250,235,235,1) 100%);
 	display: grid;
-	height: 100%;
+	height: 177px;
 
 }
 
@@ -135,8 +145,23 @@ color: #d96670;
 }
 
 .space-box{
-	// grid-area: s;
+	grid-area: space;
 
 }
+
+
+@media screen and (max-width: 565px) {
+  .site-name {
+     font-size: 3vw;
+  
+  }
+  .nav{
+    display: none;
+  }
+   MAIN{
+    grid-template: auto/ auto;
+  }
+}
+
 
 /**end*/
