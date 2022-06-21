@@ -17,13 +17,12 @@ ________________________________
 
 */
 @font-face {
-  font-family: 'Irmologion';
+  font-family: "Irmologion";
   font-display: auto;
   src: local("Clunya-IrmIEUcs"), url("https://a374ru.github.io/aprakos.ru/font/Clunya-IrmIEUcs.otf");
   font-weight: normal;
   font-style: normal;
 }
-
 #csl-zach,
 .csl-snoska {
   font-family: Irmologion;
@@ -38,24 +37,22 @@ ________________________________
   display: block;
   margin: 0 0 1px;
   padding: 10px 15px;
-  color: #999999;
-  background: #e6e6e6;
+  color: hsl(0deg, 0%, 60%);
+  background: hsl(0deg, 0%, 90%);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   cursor: pointer;
 }
-
 .panel__switch:checked + .panel__title {
-  color: #666666;
-  background: #ffebeb;
+  color: hsl(0deg, 0%, 40%);
+  background: hsl(0deg, 100%, 96%);
 }
 
 .panel__body {
   display: none;
-  padding: 0 15px;
+  padding: 0% 0 12% 0%;
 }
-
 .panel__switch:checked ~ .panel__body {
   display: block;
 }
@@ -70,18 +67,20 @@ ________________________________
   .panel-group-of-2 .panel:nth-child(2) .panel__title {
     left: 50%;
   }
+
   .panel-group-of-3 .panel__title {
-    width: 33.33333%;
+    width: 33.3333333333%;
   }
   .panel-group-of-3 .panel:nth-child(1) .panel__title {
     left: 0%;
   }
   .panel-group-of-3 .panel:nth-child(2) .panel__title {
-    left: 33.33333%;
+    left: 33.3333333333%;
   }
   .panel-group-of-3 .panel:nth-child(3) .panel__title {
-    left: 66.66667%;
+    left: 66.6666666667%;
   }
+
   .panel-group-of-4 .panel__title {
     width: 25%;
   }
@@ -97,6 +96,7 @@ ________________________________
   .panel-group-of-4 .panel:nth-child(4) .panel__title {
     left: 75%;
   }
+
   .panel-group-of-5 .panel__title {
     width: 20%;
   }
@@ -115,29 +115,30 @@ ________________________________
   .panel-group-of-5 .panel:nth-child(5) .panel__title {
     left: 80%;
   }
+
   .panel-group {
     position: relative;
   }
+
   .panel__title {
     position: absolute;
     top: 0;
-    border-left: 1px solid #fff;
   }
   .panel:first-child .panel__title {
     border-left: none;
   }
+
   .panel__body {
-    padding-top: 38px;
+    padding-top: 2.5em;
   }
 }
-
 .widget {
   margin: 0 15px;
-  border-bottom: 1px solid #e6e6e6;
+  padding: 15px 0 2.5em;
+  border-bottom: 1px solid hsl(0deg, 0%, 90%);
 }
 
 * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -149,11 +150,6 @@ ________________________________
     padding: 0;
   }
 }
-
-body {
-  -webkit-animation: bugfix infinite 2s;
-}
-
 .navigation__button {
   position: fixed;
   top: 1.5rem;
@@ -164,9 +160,7 @@ body {
   background-color: #eaeaea;
   border-radius: 10%;
   z-index: 300;
-  -webkit-box-shadow: 0rem 0rem 23px #d1d1d1;
-          box-shadow: 0rem 0rem 23px #d1d1d1;
-  -webkit-transition: all 800ms cubic-bezier(0.86, 0, 0.07, 1);
+  box-shadow: 0rem 0rem 23px #d1d1d1;
   transition: all 800ms cubic-bezier(0.86, 0, 0.07, 1);
   cursor: pointer;
 }
@@ -177,7 +171,6 @@ body {
     width: 3rem;
   }
 }
-
 .navigation__background {
   position: fixed;
   top: 1.7rem;
@@ -189,7 +182,6 @@ body {
   background-size: cover;
   background-position: center;
   z-index: 100;
-  -webkit-transition: all 800ms cubic-bezier(0.86, 0, 0.07, 1);
   transition: all 800ms cubic-bezier(0.86, 0, 0.07, 1);
 }
 
@@ -201,17 +193,15 @@ body {
     width: 2rem;
   }
 }
-
 .navigation__nav {
   position: fixed;
   top: 0;
-  left: -.4em;
+  left: -0.4em;
   height: 100vh;
   opacity: 0;
   width: 0;
   visibility: hidden;
   z-index: 200;
-  -webkit-transition: all 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: all 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
@@ -220,8 +210,7 @@ body {
   position: absolute;
   top: 40%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
   width: 100%;
   list-style: none;
@@ -243,17 +232,15 @@ body {
   color: #542a00;
   font-size: 1.7em;
   text-decoration: none;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 @media (min-width: 768px) {
   .navigation__link:link,
-  .navigation__link:visited {
+.navigation__link:visited {
     font-size: 2.5vw;
   }
 }
-
 .navigation__link span {
   margin-right: 1.5rem;
   display: inline-block;
@@ -261,13 +248,12 @@ body {
 
 .navigation__link:hover {
   color: #357a7a;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 .navigation__checkbox:checked ~ .navigation__background {
-  -webkit-transform: scale(250);
-          transform: scale(250);
+  z-index: 111;
+  transform: scale(250);
 }
 
 .navigation__checkbox:checked ~ .navigation__nav {
@@ -285,12 +271,11 @@ body {
     margin-top: 44%;
   }
 }
-
 .navigation__icon,
 .navigation__icon::before,
 .navigation__icon::after {
   display: inline-block;
-  top: .1rem;
+  top: 0.1rem;
   width: 1rem;
   height: 3px;
   background-color: #cbcbcb;
@@ -298,27 +283,25 @@ body {
 
 @media (min-width: 768px) {
   .navigation__icon,
-  .navigation__icon::before,
-  .navigation__icon::after {
+.navigation__icon::before,
+.navigation__icon::after {
     width: 2.2rem;
   }
 }
-
 .navigation__icon::before,
 .navigation__icon::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
-  -webkit-transition: all 200ms;
   transition: all 200ms;
 }
 
 .navigation__icon::before {
-  top: -.3rem;
+  top: -0.3rem;
 }
 
 .navigation__icon::after {
-  top: .3rem;
+  top: 0.3rem;
 }
 
 .navigation__checkbox:checked + .navigation__button .navigation__icon {
@@ -327,41 +310,35 @@ body {
 
 .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
   top: 0;
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
+  transform: rotate(135deg);
 }
 
 .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
   top: 0;
-  -webkit-transform: rotate(-135deg);
-          transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template: auto auto 1fr auto/auto;
 }
 
 
 .image-logo {
-  -webkit-box-shadow: 0px 3px 7px #00000077;
-          box-shadow: 0px 3px 7px #00000077;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.4666666667);
   z-index: -1;
   background-color: #d96670;
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body {
-  margin: 0;
-  font-size: 17px;
-  background-color: #fffdff;
-  height: 100%;
-  color: #542a00;
-}
-
 h2 {
-  padding-top: 2em;
+  padding-top: 1em;
   padding-bottom: 1.5em;
 }
 
@@ -376,22 +353,15 @@ h2 {
 }
 
 HEADER {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-size: clamp(1em, 2vw, 2em);
   font-size: clamp(1em, 2vw, 2em);
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-start;
+  align-items: center;
   color: #faebeb;
-  background: #ff8f8f;
-  background: #8b3838;
-  background: -webkit-gradient(linear, left top, right top, from(#8b3838), to(#faebeb));
-  background: linear-gradient(90deg, #8b3838 0%, #faebeb 100%);
+  background: rgb(255, 143, 143);
+  background: rgb(139, 56, 56);
+  background: linear-gradient(90deg, rgb(139, 56, 56) 0%, rgb(250, 235, 235) 100%);
 }
 
 #online {
@@ -399,18 +369,28 @@ HEADER {
 }
 
 MAIN {
-  display: -ms-grid;
   display: grid;
-  height: 100%;
-  font-size: clamp(1em, 2vw, 2em);
+  font-size: clamp(1em, 6vw, 2em);
+  grid-template: auto/1fr 6fr 1fr;
+  grid-template-areas: "l section  r" "space space space";
+}
+
+.left-col {
+  grid-area: r;
+}
+
+.right-col {
+  grid-area: l;
 }
 
 SECTION {
-  padding: 1em;
+  grid-area: section;
 }
 
 footer {
-  grid-area: F;
+  background: linear-gradient(0deg, rgb(139, 56, 56) 0%, rgb(250, 235, 235) 100%);
+  display: grid;
+  height: 177px;
 }
 
 #date {
@@ -422,19 +402,11 @@ footer {
 */
 .time-board {
   z-index: 100;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-grid-rows: auto;
-  -ms-grid-columns: auto auto auto auto auto;
-      grid-template: auto/ auto auto auto auto auto;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  grid-template: auto/auto auto auto auto auto;
+  justify-content: space-evenly;
   justify-items: stretch;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   background-color: #faebeb;
   border-top: 1px solid #e2e2e2;
   border-bottom: 4px solid #f1e1e2;
@@ -452,7 +424,7 @@ nav {
 
 .old-new {
   font-size: clamp(22px, 2vw, 3em);
-  padding: 1.2em 0em .7em 0em;
+  padding: 1.2em 0em 0.7em 0em;
 }
 
 .dopolnitelno {
@@ -464,16 +436,23 @@ a:link, a:visited .dalee {
 }
 
 .entrance {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
-/**end*/
-/*# sourceMappingURL=style.css.map */
+.space-box {
+  height: 0;
+  grid-area: space;
+}
+
+@media screen and (max-width: 565px) {
+  .site-name {
+    font-size: 3vw;
+  }
+
+  .nav {
+    display: none;
+  }
+}
+/**end*//*# sourceMappingURL=style.css.map */

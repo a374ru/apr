@@ -1,13 +1,42 @@
 {layout="aprakos/_wrapper"}
-
-{!-- =-=-=-=-Заголовок=-=-=-=-=-=-=- --}
-{layout:set name='temp_title'}
-Главная страница
+{layout:set name="css"}
+<link rel="stylesheet" href="{site_url}aprakos/indx" type="text/css" />
 {/layout:set}
-{!-- =-=-=-=-=-=-=-=-=-=-=- --}
+<header>
+
+	{!-- =-=-=-=-Заголовок=-=-=-=-=-=-=- --}
+	{layout:set name='temp_title'}
+	Главная страница
+	{/layout:set}
+	{!-- =-=-=-=-=-=-=-=-=-=-=- --}
+
+	<nav>
+		<a href="{site_url}aprakos/one/???">Апракос дня</a>
+		<a href="{site_url}aprakos/lenta/">Весь АПРАКОС</a>
+	</nav>
+	<main>
+		<div class="left"></div>
+		<div id="start-00">
+			<div class="title">
+
+				<h1>APRAKOS.ONLINE</h1>
+
+			</div>
+			<div class="start-02">
+
+				<div class="left">
+					left
+				</div>
+				<div class="right">
+					right
+				</div>
+			</div>
+
+		</div>
+		<div class="right">
+		</div>
+		<div></div>
+	</main>
 
 
-
-
-<a href="{site_url}aprakos/lenta/">ссылка на шаблон</a>
-
+	<a href="{site_url}aprakos/lenta/">ссылка на шаблон</a>

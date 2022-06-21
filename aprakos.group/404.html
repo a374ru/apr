@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{site_url}css/aprakos/style" />
+	<title>{exp:channel:entries}Седмица-{title}{/exp:channel:entries} | {site_name}</title>
+</head>
+
+<body>
+	{exp:channel:entries require_entry="yes"}
+	<h1>Седмица {title}</h1>
+	<h3>{author_zach}, Зачало {numb_zach}</h3>
+	<section class="csl-zach">
+
+		<p>{csl_zach}</p>
+	</section>
+
+	{/exp:channel:entries}
+</body>
+
+</html>
