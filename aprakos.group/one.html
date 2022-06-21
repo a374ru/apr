@@ -24,7 +24,7 @@
 			<li class="navi-item"><a href="###">Контакты</a></li>
 		</ul>
 	</nav>
-	<!-- menu:stert -->
+	<!-- menu:start -->
 	<!-- partial:index.partial.html -->
 	<div class="navigation">
 		<input type="checkbox" class="navigation__checkbox" id="nav-toggle">
@@ -54,7 +54,7 @@
 		</nav>
 	</div>
 	<!-- partial -->
-	<!-- menu:emd -->
+	<!-- menu:end -->
 	</div>
 </header>
 <div class="time-board" id="time-board">
@@ -79,6 +79,9 @@
 <main>
 	<div class="left-col" id="left-col"></div>
 {exp:channel:entries require_entry="yes"}
+{!-- =-=-=-=- Заголовок =-=-=-=-=-=-=- --}
+{layout:set name='temp_title'}Зачало {numb_zach}{/layout:set}
+{!-- =-=-=-=-=-=-=-=-=-=-=- --}
 	<section class="widget">
 		<div class="'accordion" id="accordion">
 			<div class="panel-group panel-group-of-3">
