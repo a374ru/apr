@@ -1,19 +1,18 @@
-{!-- =-=-=-=-=-=-ФАНТИК=-=-=-=-=-=- --}
-{layout="aprakos/_wrapper"}
+{!-- =-=-=-=-=-=- в слюду=-=-=-=-=-=- --}
+{layout="aprakos/_mica"}
 {!-- =-=-=-=-=- CSS =-=-=-=-=-==-= --}
 {layout:set name="css"}
 <link rel="stylesheet" href="{site_url}dev/style" type="text/css" /> {/layout:set}
-{!-- =-=-=-=- Заголовок =-=-=-=-=-=-=- --}
-{layout:set name='temp_title'}Зачала всего лета – {/layout:set}
-{!-- =-=-=-=-=-=-=-=-=-=-=- --}
 
 
 <a href="{site_url}">ссылка назад</a>
 
 
 {exp:channel:entries channel="aprakos" sort="desc" limit="3"}
-{!-- Захват limit в переменную entries --}
-{layout:set name='entries'}{count}{/layout:set}
+{!-- =-=-=-=- Заголовок =-=-=-=-=-=-=- --}
+{layout:set name='temp_title'}Зачала всего лета - {count} {/layout:set}
+{!-- =-=-=-=-=-=-=-=-=-=-=- --}
+
 <div class="title-zach">
 	<h1 id="title-zach"><a href="{url_title_path='aprakos/one'}">Седьмица { title }</h1></a></h1>
 </div>

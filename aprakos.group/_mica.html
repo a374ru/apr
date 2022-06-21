@@ -1,0 +1,86 @@
+{!-- =-=-=-=- в Фантик =-=-=-=-==- --}
+{layout="aprakos/_wrapper"}
+
+
+
+<header class="hdr">
+	<div id="hdr">
+		<div class="image-logo" id="image-logo-id">
+
+			<a href="{site_url}">
+				<img src="https://izohost.aprakos.online/xx.svg" alt="SVG">
+
+			</a>
+		</div>
+	</div>
+	<div class="site-name" id="site-name">
+		<h1><span id="aprakos">АПРАКОС</span>.<span id="online">ОНЛАЙН</span></h1>
+	</div>
+	<nav class="nav">
+		<ul class="navi-list">
+			<li class="navi-item"><a href="###">Пасхалия</a></li>
+			<li class="navi-item"><a href="###">Седмица</a></li>
+			<li class="navi-item"><a href="###">Контакты</a></li>
+		</ul>
+	</nav>
+	<!-- menu:start -->
+	<!-- partial:index.partial.html -->
+	<div class="navigation">
+		<input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+		<label for="nav-toggle" class="navigation__button">
+			<span class="navigation__icon"></span>
+		</label>
+		<div class="navigation__background"> </div>
+
+		<nav class="navigation__nav" role="navigation">
+			<ul class="navigation__list">
+				<li class="navigation__item">
+					<a href="###" class="navigation__link">ПАСХАЛИЯ</a>
+				</li>
+				<li class="navigation__item">
+					<a href="###" class="navigation__link">АПРАКОС</a>
+				</li>
+				<li class="navigation__item">
+					<a href="###" class="navigation__link">ДВУНАДЕСЯТЫЕ</a>
+				</li>
+				<li class="navigation__item">
+					<a href="###" class="navigation__link">КОНТАКТЫ</a>
+				</li>
+				<li class="navigation__item">
+					<a href="###" class="navigation__link">СПРАВКА</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<!-- partial -->
+	<!-- menu:end -->
+	</div>
+</header>
+<div class="time-board" id="time-board">
+	<div class="old-new" id="time-board-year">
+		<ruby>
+			5530<rt>год: 2022</rt>
+		</ruby>
+	</div>
+	<div class="old-new" id="time-board-sedmica"><ruby>
+			1<rt>седмица</rt>
+		</ruby></div>
+	<div class="old-new" id="time-board-sedmica-newyear"><ruby>
+			0<rt>седмица нов.</rt>
+		</ruby></div>
+	<div class="old-new" id="time-board-glas"><ruby>
+			1<rt>глас</rt>
+		</ruby></div>
+	<div class="old-new" id="time-board-read-sundays"><ruby>
+			12<rt>воскр. чтения </rt>
+		</ruby></div>
+</div>
+<main>
+	<div class="left-col" id="left-col"></div>
+
+	{layout:contents}
+
+	{!-- <div class="space-box" id="space-box">Space-box</div> --}
+	<div class="right-col" id="right-col"></div>
+	{!-- <div class="space-box"></div> --}
+</main>
