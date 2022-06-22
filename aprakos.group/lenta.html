@@ -1,25 +1,24 @@
 {!-- =-=-=-=-=-=- в слюду=-=-=-=-=-=- --}
 {layout="aprakos/_mica"}
-{!-- =-=-=-=-=- CSS =-=-=-=-=-==-= --}
-{layout:set name="css"}
-<link rel="stylesheet" href="{site_url}dev/style" type="text/css" /> {/layout:set}
 
 
-<a href="{site_url}">ссылка назад</a>
-
-
-{exp:channel:entries channel="aprakos" sort="desc" limit="3"}
+{exp:channel:entries channel="aprakos" sort="asc" limit="12"}
 {!-- =-=-=-=- Заголовок =-=-=-=-=-=-=- --}
-{layout:set name='temp_title'}Зачала всего лета - {count} {/layout:set}
+{layout:set name='temp_title'}Зачала всего лета ({count}) {/layout:set}
 {!-- =-=-=-=-=-=-=-=-=-=-=- --}
+<section class="lenta">
 
 <div class="title-zach">
-	<h1 id="title-zach"><a href="{url_title_path='aprakos/one'}">Седьмица { title }</h1></a></h1>
+	<h2 id="title-zach">
+		<a href="{url_title_path='aprakos/one'}">Седьмица { title }
+	
+		</a>
+	</h2>
 </div>
 <p class="numb-zach">
 	<span id="autor-zach-id">{ author_zach },</span> зач. { numb_zach }
 </p>
-<section class="csl-zach">
+{!-- <section class="csl-zach">
 	{if csl_zach}
 	<p id="csl-zach-id">{ csl_zach }</p>
 	<p class="dalee">
@@ -28,16 +27,22 @@
 
 	{if:else} {body:limit characters='77'}
 	{/if}
-</section>
-<section class="rus-zach">
+</section> --}
+<section class="rus-zach" id="rus-zach">
 	{if rus_zach}
+	{exp:word_limit total='12' strip_tags='yes'}
 	{ rus_zach }
+	{/exp:word_limit}
 	{/if}
+			{!--
+			<hr> --}
 </section>
 
-<section class="glg-zach">
+{!-- <section class="glg-zach">
 	{if glg_zach}
 	{ glg_zach }
 	{/if}
+</section> --}
 </section>
+
 {/exp:channel:entries}

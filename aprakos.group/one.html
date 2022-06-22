@@ -1,18 +1,17 @@
 {layout="aprakos/_mica"}
 
-{layout:set name='css'}
-<link rel="stylesheet" href="{site_url}dev/style" type="text/css" />
-{/layout:set}
-
-{exp:channel:entries require_entry="yes"}
+{exp:channel:entries chanel="aprakos" require_entry="yes"}
+{if no_results}
+{redirect="404"}
+{/if}
 {!-- =-=-=-=- Заголовок =-=-=-=-=-=-=- --}
 {layout:set name='temp_title'}{author_zach}, Зачало {numb_zach}{/layout:set}
 {!-- =-=-=-=-=-=-=-=-=-=-=- --}
-	<section class="widget">
+	
 		<div class="'accordion" id="accordion">
 			<div class="panel-group panel-group-of-3">
 				<div class="panel">
-					<input checked="<%= true %>" class="panel__switch" id="panel-csl-zach" name="panel-group-0"
+					<input class="panel__switch" id="panel-csl-zach" name="panel-group-0"
 						type="radio"></input>
 					<label class="panel__title" for="panel-csl-zach">Церковно-славянский</label>
 					<section class="panel__body csl">
@@ -25,7 +24,17 @@
 					</section>
 				</div>
 				<div class="panel">
-					<input class="panel__switch" id="panel-rus-zach" name="panel-group-0" type="radio"></input>
+					<input class="panel__switch" id="panel-glg-zach" name="panel-group-0" type="radio"></input>
+					<label class="panel__title" for="panel-glg-zach">Глаголический</label>
+					<section class="panel__body" name="glg-zach">
+						<h2>
+							{author_zach}, Зачало {numb_zach}
+						</h2>
+						{if glg_zach}{glg_zach}{if:else}Милости просим,глаголическое зачало временно не доступно…{/if}
+					</section>
+					</div>
+					<div class="panel">
+						<input checked="<%= true %>" class="panel__switch" id="panel-rus-zach" name="panel-group-0" type="radio"></input>
 					<label class="panel__title" for="panel-rus-zach">Русский</label>
 					<article class="panel__body" name="rus_zach">
 						<h2>
@@ -35,16 +44,6 @@
 						доступно…{/if}
 					</article>
 				</div>
-				<div class="panel">
-					<input class="panel__switch" id="panel-glg-zach" name="panel-group-0" type="radio"></input>
-					<label class="panel__title" for="panel-glg-zach">Глаголический</label>
-					<section class="panel__body" name="glg-zach">
-						<h2>
-							{author_zach}, Зачало {numb_zach}
-						</h2>
-						{if glg_zach}{glg_zach}{if:else}Милости просим,глаголическое зачало временно не доступно…{/if}
-					</section>
-				</div>
 			</div>
-	</section>
+
 	{/exp:channel:entries}

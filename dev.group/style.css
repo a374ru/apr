@@ -123,6 +123,7 @@ ________________________________
   .panel__title {
     position: absolute;
     top: 0;
+    border-left: 4px solid #fff;
   }
   .panel:first-child .panel__title {
     border-left: none;
@@ -135,7 +136,6 @@ ________________________________
 .widget {
   margin: 0 15px;
   padding: 15px 0 2.5em;
-  border-bottom: 1px solid hsl(0deg, 0%, 90%);
 }
 
 * {
@@ -318,12 +318,24 @@ ________________________________
   transform: rotate(-135deg);
 }
 
+/** 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Шрифты и классы шаблона aprakos.online для EE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+*/
+@font-face {
+  font-family: "Irmologion";
+  font-display: auto;
+  src: local("Clunya-IrmIEUcs"), url("https://a374ru.github.io/aprakos.ru/font/Clunya-IrmIEUcs.otf");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   height: 100vh;
   display: grid;
   grid-template: auto auto 1fr auto/auto;
 }
-
 
 .image-logo {
   box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.4666666667);
@@ -339,7 +351,7 @@ body {
 
 h2 {
   padding-top: 1em;
-  padding-bottom: 1.5em;
+  padding-bottom: 1.2em;
 }
 
 .red,
@@ -455,4 +467,43 @@ a:link, a:visited .dalee {
     display: none;
   }
 }
+p.numb-zach {
+  padding-bottom: 1em;
+  color: #e9967a;
+}
+
+.title-zach a {
+  color: #2f4f4f;
+}
+
+/** 
+Форматирование  ленты
+*/
+.lenta h2 {
+  font-size: 1.2em;
+  padding-bottom: 1%;
+}
+
+.lenta p {
+  font-style: oblique;
+  font-size: 0.9em;
+  padding-bottom: 0.3em;
+}
+
+.lenta a {
+  text-decoration: none;
+  color: #887373;
+}
+
+.lenta a:hover {
+  color: #e34234;
+}
+
+/* -------- end: lenta -------- */
+.lenta .rus-zach {
+  font-size: 0.8em;
+  font-style: oblique;
+  color: #887373;
+}
+
 /**end*//*# sourceMappingURL=style.css.map */

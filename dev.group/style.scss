@@ -59,7 +59,7 @@ background-color: #d96670;
 
 h2 {
 	padding-top: 1em;
-	padding-bottom: 1.5em;
+	padding-bottom: 1.2em;
 }
 
 .red,
@@ -194,5 +194,47 @@ color: #d96670;
   }
 }
 
+p.numb-zach {
+  padding-bottom: 1em;
+  color: #e9967a;
+}
 
+.title-zach a {
+  color: #2f4f4f;
+}
+
+/** 
+Форматирование  ленты
+*/
+.lenta{
+	// background-image: url( https://izohost.aprakos.online/metr.svg);
+}
+.lenta h2{
+	font-size: 1.2em;
+	padding-bottom: 1%;
+}
+
+.lenta p{
+	font-style: oblique;
+	font-size: .9em;
+	padding-bottom: .3em;
+}
+
+.lenta a {
+	text-decoration: none;
+	color: #887373;
+
+}
+
+.lenta a:hover {
+	color: $red-color;
+}
+
+/* -------- end: lenta -------- */
+.lenta .rus-zach{
+	font-size: .8em;
+	font-style: oblique;
+	color: #887373;
+
+}
 /**end*/

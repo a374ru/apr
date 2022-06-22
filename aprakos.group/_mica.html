@@ -1,7 +1,9 @@
 {!-- =-=-=-=- в Фантик =-=-=-=-==- --}
 {layout="aprakos/_wrapper"}
 
-
+{layout:set name='css'}
+<link rel="stylesheet" href="{site_url}dev/style" type="text/css" />
+{/layout:set}
 
 <header class="hdr">
 	<div id="hdr">
@@ -62,25 +64,38 @@
 			5530<rt>год: 2022</rt>
 		</ruby>
 	</div>
-	<div class="old-new" id="time-board-sedmica"><ruby>
+	<div class="old-new" id="time-board-sedmica">
+		<ruby>
 			1<rt>седмица</rt>
-		</ruby></div>
-	<div class="old-new" id="time-board-sedmica-newyear"><ruby>
+		</ruby>
+		</div>
+		<div class="old-new" id="time-board-sedmica-newyear">
+			<ruby>
 			0<rt>седмица нов.</rt>
-		</ruby></div>
-	<div class="old-new" id="time-board-glas"><ruby>
+		</ruby>
+		</div>
+		<div class="old-new" id="time-board-glas">
+			<ruby>
 			1<rt>глас</rt>
-		</ruby></div>
-	<div class="old-new" id="time-board-read-sundays"><ruby>
+		</ruby>
+		</div>
+		<div class="old-new" id="time-board-read-sundays">
+			<ruby>
 			12<rt>воскр. чтения </rt>
-		</ruby></div>
+		</ruby>
+		</div>
 </div>
 <main>
 	<div class="left-col" id="left-col"></div>
 
+{!--
+В секцию widget подгружается содержимое шаблонов,
+таких как lenta, one и т.д..
+--}
+<section class="widget">
 	{layout:contents}
+	</section>
 
-	{!-- <div class="space-box" id="space-box">Space-box</div> --}
 	<div class="right-col" id="right-col"></div>
 	{!-- <div class="space-box"></div> --}
 </main>
