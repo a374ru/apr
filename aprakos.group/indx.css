@@ -33,11 +33,11 @@ h1 {
 	letter-spacing:-.1em;
 	font-kerning:  auto ;
   font-family: "Irmologion";
-  font-size: clamp(26px, 8vw, 500%);
+  font-size: clamp(26px, 9vw, 500%);
   max-width: 50ch;
   text-align: center;
   transform: scale(0.94);
-  animation: scale 12s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  animation: scale 2s forwards cubic-bezier(0.5, 1, 0.89, 1);
   text-shadow: 0px 0px 2px #cfcfcf;
 }
 @keyframes scale {
@@ -132,3 +132,39 @@ span:nth-child(18) {
   }
 }
 
+nav{
+	display: flex;
+  align-content: center;
+  flex-direction: row-reverse;
+  width: 272px;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+a:link, a:visited{
+	/* display:none; */
+	color:#f1da78;
+	text-decoration: none;
+	font-size: 1.3rem;
+	background-color: #a34535db;
+	padding: 15px;
+	border-radius: .5em;
+  /* transition: 300ms; */
+  transition-duration: .3s;
+	
+
+}
+a:hover{
+	background-color: #68971ce0;
+	color: #eeeeee;
+}
+
+/* #one, #two{
+font-size: clamp(2em, 6vw, 500%);
+color: aliceblue;
+
+} */
+
+footer{
+	display: none;
+}
