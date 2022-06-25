@@ -18,13 +18,15 @@
 	<div class="site-name" id="site-name">
 		<h1><span id="aprakos">АПРАКОС</span>.<span id="online">ОНЛАЙН</span></h1>
 	</div>
-	<nav class="nav">
+	<!-- Topbar menu -->
+	{!-- <nav class="nav">
 		<ul class="navi-list">
 			<li class="navi-item"><a href="###">Пасхалия</a></li>
 			<li class="navi-item"><a href="###">Седмица</a></li>
 			<li class="navi-item"><a href="###">Контакты</a></li>
 		</ul>
-	</nav>
+	</nav> --}
+	<!-- end: Topbar menu -->
 	<!-- menu:start -->
 	<!-- partial:index.partial.html -->
 	<div class="navigation">
@@ -37,19 +39,16 @@
 		<nav class="navigation__nav" role="navigation">
 			<ul class="navigation__list">
 				<li class="navigation__item">
+					<a href="{site_url}" class="navigation__link">АПРАКОС</a>
+				</li>
+				<li class="navigation__item">
 					<a href="###" class="navigation__link">ПАСХАЛИЯ</a>
 				</li>
 				<li class="navigation__item">
-					<a href="###" class="navigation__link">АПРАКОС</a>
+					<a href="{site_url}contacts" class="navigation__link">КОНТАКТЫ</a>
 				</li>
 				<li class="navigation__item">
-					<a href="###" class="navigation__link">ДВУНАДЕСЯТЫЕ</a>
-				</li>
-				<li class="navigation__item">
-					<a href="###" class="navigation__link">КОНТАКТЫ</a>
-				</li>
-				<li class="navigation__item">
-					<a href="###" class="navigation__link">СПРАВКА</a>
+					<a href="{site_url}ystm" class="navigation__link">СПРАВКА</a>
 				</li>
 			</ul>
 		</nav>

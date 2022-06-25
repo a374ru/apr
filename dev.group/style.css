@@ -182,7 +182,6 @@ ________________________________
   background-size: cover;
   background-position: center;
   z-index: 100;
-  transition: all 800ms cubic-bezier(0.86, 0, 0.07, 1);
 }
 
 @media screen and (min-width: 768px) {
@@ -202,7 +201,6 @@ ________________________________
   width: 0;
   visibility: hidden;
   z-index: 200;
-  transition: all 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .navigation__list {
@@ -268,7 +266,7 @@ ________________________________
 
 @media screen and (min-width: 768px) {
   .navigation__icon {
-    margin-top: 44%;
+    margin-top: 40%;
   }
 }
 .navigation__icon,
@@ -382,17 +380,17 @@ HEADER {
 
 MAIN {
   display: grid;
-  font-size: clamp(1em, 6vw, 2em);
+  font-size: clamp(1em, 2vw, 2em);
   grid-template: auto/1fr 6fr 1fr;
   grid-template-areas: "l section  r" "space space space";
 }
 
 .left-col {
-  grid-area: r;
+  grid-area: l;
 }
 
 .right-col {
-  grid-area: l;
+  grid-area: r;
 }
 
 SECTION {
@@ -458,13 +456,17 @@ a:link, a:visited .dalee {
   grid-area: space;
 }
 
-@media screen and (max-width: 565px) {
+@media screen and (max-width: 768px) {
   .site-name {
     font-size: 3vw;
   }
 
   .nav {
     display: none;
+  }
+
+  MAIN {
+    font-size: clamp(1em, 9vw, 2em);
   }
 }
 p.numb-zach {

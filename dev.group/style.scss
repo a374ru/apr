@@ -89,7 +89,7 @@ background: linear-gradient(90deg, rgba(139,56,56,1) 0%, rgba(250,235,235,1) 100
 MAIN {
 
 	display: grid;
-	font-size: clamp(1em, 6vw, 2em);
+	font-size: clamp(1em, 2vw, 2em);
 	grid-template: auto / 1fr 6fr 1fr;
 	grid-template-areas:
     "l section  r"
@@ -100,11 +100,11 @@ MAIN {
 }
 
 .left-col{
-grid-area: r;
+grid-area: l;
 	
 }
 .right-col{
-grid-area: l;
+grid-area: r;
 }
 
 article{
@@ -180,7 +180,7 @@ color: #d96670;
 }
 
 
-@media screen and (max-width: 565px) {
+@media screen and (max-width: 768px) {
   .site-name {
      font-size: 3vw;
   
@@ -190,7 +190,7 @@ color: #d96670;
   }
    MAIN{
     //   grid-template: auto / auto auto auto;
-
+font-size: clamp(1em, 9vw, 2em)
   }
 }
 

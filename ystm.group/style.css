@@ -17,9 +17,12 @@
 body {
 
 	margin:0;
-	min-width: 99%;
+	min-height: 100%;
+background-color: #fffff0;
+  background: url(https://izohost.aprakos.online/bg3.svg)   no-repeat bottom right,
+  						url(https://izohost.aprakos.online/metr.svg)  0% 0% no-repeat ;  
 
-  background: url(https://izohost.aprakos.online/metr.svg) 0% 0% no-repeat;
+    /* background: url(https://izohost.aprakos.online/metr.svg) 0% 0% no-repeat; */
 
 	font-size: 17px;
 
@@ -28,23 +31,33 @@ body {
 }
 
 h1 {
+	font-size: 3.2em;
 	color: rgb(95, 90, 165);
 
 }
 
 
 h2{
-	font-size: 2.4em;
-	color: darkslategray;
+	font-size: 2.7em;
+	font-weight: bold;
+	color: #2884b5;
+	margin: 2em 0em 0em 0em;
+	transform: skewX(7deg);
+
+	border-bottom-width: 2px;
+	border-bottom-color: #000;
 }
 
 p{
+	transform: skewX(355deg);
 	font-size: 1.7em;
 }
 
 ul, li, ol{
 	font-size: large;
+	margin-left: -0.5em;
 }
+
 
 
 .red {
@@ -54,8 +67,10 @@ ul, li, ol{
 section{
 		display: grid;
 		grid-template-columns: minmax(320px,960px);
-		justify-content: center;
-{!-- 		background: url(https://izohost.aprakos.online/metr0.svg) 0% 0% no-repeat; --}
+		justify-content: start;
+margin-left: 7.5em;
+
+	/* background: url(https://izohost.aprakos.online/metr0.svg) 0% 0% no-repeat;  */
 
 	padding: 0px 12px 122px 10px;
 }
@@ -73,8 +88,14 @@ padding-top: 120px;
 }
 
 .title {
-	font-weight: 600;
-	font-size: 3em;
+	color: #ac2b2b;
+  font-weight: 600;
+  /* font-size: 3.2em; */
+  background: #fff4df;
+  transform: skewX(5deg);
+  padding: 1em;
+  box-shadow: 4px 15px 22px #00000044;
+
 }
 
 .desc {
@@ -93,7 +114,9 @@ pre, code {
 }
 
 img{
-	width: 100%;
+	transform: skewX(6deg);
+	width: 77%;
+	padding-left: 7%;
 	/* box-shadow: -33px 20px 7px #00000077; */
 }
 
@@ -141,18 +164,32 @@ img{
 
 }
 
-@media (max-width: 1250px){
-{!-- 	body{
-		background-image: none;
-	} --}
-section{
-margin-left: 7.5em;
-}
-}
 
-@media (max-width: 550px){
+@media screen and (max-width: 550px){
 	body{
 		background-image: none;
 	}
+	section{
+		margin: 0;
+padding-left: 1em;
+}
+@keyframes flag {
+
+	0% {
+		float: right;
+		opacity: 1;
+		left: 100vw;
+	}
+
+	/* 50% {
+		opacity: 1;
+		top: 50px;
+	} */
+
+	100% {
+		left: 0px;
+	}
+
+}
 
 }
